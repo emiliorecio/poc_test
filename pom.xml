@@ -40,7 +40,7 @@
         <profile>
             <id>linux</id>
                 <properties>
-                    <chromeDrivePath>/var/lib/jenkins/workspace/Selenium_PoC/src/test/resources/chromedriver</chromeDrivePath>
+                    <chromeDrivePath>/var/lib/jenkins/resources/chromedriver</chromeDrivePath>
                 </properties>
         </profile>
     </profiles>
