@@ -89,6 +89,7 @@ public class TestSimple {
                 .build();
         ChromeOptions chromeOption = new ChromeOptions();
         chromeOption.addArguments("no-sandbox");
+        chromeOption.addArguments("user-data-dir=/var/lib/jenkins/resources/chromeData");
         WebDriver driver = new ChromeDriver(cds, chromeOption);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return driver;
