@@ -84,7 +84,7 @@ public class TestSimple {
 
     private WebDriver getChromeDriver() {
         ChromeDriverService cds = new ChromeDriverService.Builder()
-                .withEnvironment(ImmutableMap.of("DISPLAY", ":99"))
+                .withEnvironment(ImmutableMap.of("DISPLAY", ":95"))
                 .usingDriverExecutable(new File(ReadConfigFile.getProperty(PATH_CHROMEDRIVER)))
                 .build();
         ChromeOptions chromeOption = new ChromeOptions();
