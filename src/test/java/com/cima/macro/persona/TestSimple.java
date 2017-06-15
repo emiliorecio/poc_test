@@ -94,7 +94,7 @@ public class TestSimple {
         WebDriver driver = new ChromeDriver(cds, chromeOption);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         System.out.println("================================================================================");
-        System.out.println("==============================" + ReadConfigFile.getProperty(PATH_VNCDISPLAYPORT) + "==============================");
+        System.out.println("============================== " + ReadConfigFile.getProperty(PATH_VNCDISPLAYPORT) + " ==============================");
         System.out.println("================================================================================");
         return driver;
     }
