@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 public class TestSimple {
 
     private static String PATH_CHROMEDRIVER = "ar.com.macro.path.chromeDriver";
-    private static String PATH_VNCDISPLAYPORT = "ar.com.macro.vncDisplayPort";
     private static String PERSONA_NAME = "ar.com.macro.menu.persona.label";
     private static String PERSONA_INICIO_NAME = "ar.com.macro.menu.persona.level0.label.inicio";
     private static String PERSONA_INICIO_LINK = "ar.com.macro.menu.persona.level0.link.inicio";
@@ -56,7 +55,7 @@ public class TestSimple {
         System.out.println("List size: " + element.size());
         System.out.println("================================================================================");
         waitForLoad(driver);
-        
+
         //WebElement e = element.get(0);
 //        for (WebElement webElement : element) {
 //            System.out.println(webElement.toString());
@@ -90,12 +89,9 @@ public class TestSimple {
                 .build();
         ChromeOptions chromeOption = new ChromeOptions();
         chromeOption.addArguments("no-sandbox");
-        chromeOption.addArguments("user-data-dir=/var/lib/jenkins/resources/chromeData");
+        //chromeOption.addArguments("user-data-dir=/var/lib/jenkins/resources/chromeData");
         WebDriver driver = new ChromeDriver(cds, chromeOption);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("================================================================================");
-        System.out.println("============================== " + ReadConfigFile.getProperty(PATH_VNCDISPLAYPORT) + " ==============================");
-        System.out.println("================================================================================");
         return driver;
     }
 

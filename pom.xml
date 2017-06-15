@@ -41,7 +41,6 @@
             <id>linux</id>
                 <properties>
                     <chromeDrivePath>/var/lib/jenkins/resources/chromedriver</chromeDrivePath>
-                    <displayPort>${env.VNC_DISPLAY}</displayPort>
                 </properties>
         </profile>
     </profiles>
